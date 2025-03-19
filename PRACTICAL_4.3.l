@@ -22,6 +22,10 @@ int stop_flag = 0;
 
 %%
 
+int yywrap() {
+    return 0;
+}
+
 int main() {
     printf("Enter text (type '{exit}' to stop and display counts):\n");
     while (!stop_flag) {
@@ -33,8 +37,4 @@ int main() {
     printf("Characters: %d\n", char_count);
     printf("Lines: %d\n", line_count);
     return 0;
-}
-
-int yywrap() {
-    return 1;
 }
