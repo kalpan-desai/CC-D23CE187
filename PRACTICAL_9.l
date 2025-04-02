@@ -1,7 +1,7 @@
 %option noyywrap
 %{
 	#include<stdio.h>
-	#include "firstyacc.tab.h" 
+	#include "PRACTICAL_9.tab.h" 
 %}
 
 %%

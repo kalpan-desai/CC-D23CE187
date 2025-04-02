@@ -1,5 +1,5 @@
 %{
-#include "prac10.tab.h"
+#include "PRACTICAL_10.tab.h"
 
 %}
 

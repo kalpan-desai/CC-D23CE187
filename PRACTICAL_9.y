@@ -1,6 +1,8 @@
 %{
-	#include<stdio.h>
-	#include<stdlib.h> 
+    #include<stdio.h>
+    #include<stdlib.h>
+    int yylex(); // Declare yylex
+    int yyerror(char *msg); // Declare yyerror
 %}
 
 %token a b i t e NL 
@@ -21,8 +23,8 @@ E: b
 %%
 int yyerror(char *msg) 
 { 
-	printf("\n-> Invalid string!!\n");  
-	exit(0); 
+    printf("\n-> Invalid string!!\n");  
+    exit(0); 
 } 
 //driver code  
 int main() 
